@@ -41,17 +41,26 @@ public class LatinSquare {
 		
 		return false;
 	}
-	/*public static boolean hasAllValues(int [] arr1, int[] arr2) {
+	public static boolean hasAllValues(int [] arr1, int[] arr2) {
 		boolean hasAllValues = true;
 		for (int j = 0; j < arr2.length; j++) 
 		{
 			boolean bFound = false;
 			
 			for(int i = 0; i < arr1.length; i++) {
-		
+				if (arr1[i]==arr2[j]) {
+					bFound = true;
+					break;
+					
+				}
 	}
+			if (bFound == false) {
+				hasAllValues = false;
+				break;
+				
+			}
 	}
-		
+		return hasAllValues;
 
-	}*/
+	}
 }
